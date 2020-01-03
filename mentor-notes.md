@@ -1,57 +1,14 @@
-# Intro to Figma
+# Step by step mentors notes
 
 ## Table of Contents
 
 [TOC]
 
-## Description
-
-- Working in pairs, students will create three screens from a mobile app
-- They will be given a design system containing styles that they should apply as they go along
-- They will make three reusable components and add them to the design system
-- They will make each frame resizable
-- They will make a working prototype
-
-## Format
-Code along with two mentors
-
-
-## Learning outcomes
-- We can **use frames** to represent key screens in a mobile prototype
-- We can **create icons** using Figma's drawing tools
-- We can **create a library of reusable UI components**
-- We can **set constraints on frames** to make them responsive
-- We can **link up different screens of our app** to create a testable prototype
-
-
-Figma allows us to design and prototype web apps before we develop them. 
-
-The process we'll be following over the next three weeks is designed to help us quickly test out our ideas with real users. The benefits of testing a rough version on real users include:
-
- - Testing our assumptions (will this product actually help our target user?)
- - Obtaining actionable suggestions about how we can improve the next iteration of our product
- - Saving resources by doing all of the above early on in the process
-
-![](https://i.imgur.com/b7zBtoG.png)
-> From gv.com/sprint 
-> 
-
 ---
-
-We're going to use Figma to create a working prototype that we can take to the streets!
-
-![](https://i.imgur.com/q7gXWBn.png)
-
-
-## Getting started
-
-Make sure you've created an account and are logged in at figma.com. 
-
-Clone this repo. It contains the images of book covers that we'll add to our prototype.
 
 ## Step 1 - Create a new project with two pages
 
-1. Click the 'New File' button in the top right hand corner of the screen. 
+1. Click the 'New File' button in the top right hand corner of the screen.
 
 ![](https://i.imgur.com/eAb1V8Y.png)
 
@@ -63,9 +20,9 @@ Clone this repo. It contains the images of book covers that we'll add to our pro
 
 4. Rename 'Page 1' to 'prototype'
 
-**TIP:** Don't create a Team for your project because Figma limits you to a single teammate when you do this on the free tier. Teams is a paid feature for large organisations working on multiple projects. 
+**TIP:** Don't create a Team for your project because Figma limits you to a single teammate when you do this on the free tier. Teams is a paid feature for large organisations working on multiple projects.
 
-If we make a project without a team, we can invite as many people to collaborate as we like. :smile: 
+If we make a project without a team, we can invite as many people to collaborate as we like. :smile:
 
 ---
 
@@ -73,7 +30,7 @@ If we make a project without a team, we can invite as many people to collaborate
 
 A frame is a representation of a single screen from our web app.
 
-In true mobile-first fashion, we're going to focus on making a prototype that we can test with mobile users. 
+In true mobile-first fashion, we're going to focus on making a prototype that we can test with mobile users.
 
 **MENTOR NOTE:** We don't need to create separate prototypes for tablet or desktop - as we'll see later, there is a way to adapt this one for tablet and desktop devices.
 
@@ -103,28 +60,27 @@ Double click the name of a frame to change it. We're going to call these three f
 
 ![](https://i.imgur.com/UbWRw8V.png)
 
---- 
+---
 
 ## Step 3 - Create component 1: Star rating
 
-In this step, we create a set of star rating icons and we convert them into a reusable component. 
+In this step, we create a set of star rating icons and we convert them into a reusable component.
 
 1. Select the Star Tool from the main Toolbar
 
 ![](https://i.imgur.com/fARqBM2.png)
 
 2. Draw a star measuring 16x16px in the home-dev-books frame. Change the **corner radius** to 0.2. Voila, we have a nicely-rounded 5-pointed star!
-![](https://i.imgur.com/R6n9ccJ.png)
-> Setting the corner radius to 0.2 makes the points slightly rounded
+   ![](https://i.imgur.com/R6n9ccJ.png)
+   > Setting the corner radius to 0.2 makes the points slightly rounded
 
 ![](https://i.imgur.com/FzDFshs.png)
-
 
 **TIP:** Hold **Shift** while drawing to keep the width and height equal
 
 **TIP:** Use **cmd +** to zoom in and **cmd -** to zoom out of the canvas
 
-3. **Hold Alt + click**  and drag the star to make four copies. Select them all (**Hold Shift + click**) and change the fill colour in the Properties Panel:
+3. **Hold Alt + click** and drag the star to make four copies. Select them all (**Hold Shift + click**) and change the fill colour in the Properties Panel:
 
 ![](https://i.imgur.com/uFO6IdA.png)
 
@@ -134,21 +90,21 @@ In this step, we create a set of star rating icons and we convert them into a re
 
 ![](https://i.imgur.com/5YFgiHV.png)
 
---- 
+---
 
-#### Why do we need components?
+**Why do we need components?**
 
-At this point, you can explain that the groups of objects we've just copied are independent from one another - when you change the styling on one, the others do not change. So, if we decide to change our app's colour palette, we'd have to apply the new colours to each group of stars individually. 
+At this point, you can explain that the groups of objects we've just copied are independent from one another - when you change the styling on one, the others do not change. So, if we decide to change our app's colour palette, we'd have to apply the new colours to each group of stars individually.
 
-***Can the students think of why this could be a problem?***
+**_Can the students think of why this could be a problem?_**
 
-***Hint: Imagine if, instead of 3 frames, our prototype had 30 frames, and that each one contained its own star-rating group? (it would take forever to update each one any time we change our design)***
+**_Hint: Imagine if, instead of 3 frames, our prototype had 30 frames, and that each one contained its own star-rating group? (it would take forever to update each one any time we change our design)_**
 
-The solution is to create a ***master component*** that is connected to its ***child components*** (copies of the master component). Any changes that we make to the master component will automatically copy across to the child components.
+The solution is to create a **_master component_** that is connected to its **_child components_** (copies of the master component). Any changes that we make to the master component will automatically copy across to the child components.
 
---- 
+---
 
-#### Turning the stars into a component
+**Turning the stars into a component**
 
 Let's make our star ratings a little bit more component-like. Each star needs to be able to display 3 possible states: filled, half-filled, and unfilled
 
@@ -160,18 +116,15 @@ Let's make our star ratings a little bit more component-like. Each star needs to
 
 ![](https://i.imgur.com/lkSkH10.png)
 
-
-
-7. We also need to make a half-greyed out star. Copy another filled in star, select the Rectangle Tool, and draw a rectangle across the right-hand side of the star. Making sure that both the rectangle and the star are selected, click the Boolean Groups dropdown menu in the Main Toolbar, and hit 'Subtract Selection'. 
+7. We also need to make a half-greyed out star. Copy another filled in star, select the Rectangle Tool, and draw a rectangle across the right-hand side of the star. Making sure that both the rectangle and the star are selected, click the Boolean Groups dropdown menu in the Main Toolbar, and hit 'Subtract Selection'.
 
 ![](https://i.imgur.com/tI6RQpy.gif)
-> Subtract Selection creates a subtraction group containing the full star and the rectangle. Only the non overlapping areas of both shapes are displayed, resulting in a half star effect. 
 
+> Subtract Selection creates a subtraction group containing the full star and the rectangle. Only the non overlapping areas of both shapes are displayed, resulting in a half star effect.
 
 > We've created a half star by subtracting the overlapping section
-> 
 
-**TIP:** Subtract Selection is a *non-destructive command*, which means that the objects you use it on don't get destroyed or altered. It's a bit like adding an Instagram filter to a photo.
+**TIP:** Subtract Selection is a _non-destructive command_, which means that the objects you use it on don't get destroyed or altered. It's a bit like adding an Instagram filter to a photo.
 
 8. Move the half star on top of the fifth star. Positioning the half star exactly on top can be fiddly - to get pixel perfect placement, you have to make sure you select both elements inside the subtraction group (**hold Shift + click** to select multiple ones) before placing it.
 
@@ -189,40 +142,23 @@ Let's make our star ratings a little bit more component-like. Each star needs to
 
 ![](https://i.imgur.com/S4FQNgT.gif)
 
-12. Select all five stars go to the Main Toolbar, and click the 'Create Component' button. 
+12. Select all five stars go to the Main Toolbar, and click the 'Create Component' button.
 
 ![](https://i.imgur.com/os4gLHT.gif)
 
-Congratulations! We've created a component! :yellow_heart: 
+Congratulations! We've created a component! :yellow_heart:
 
 13. Now let’s copy the star-rating component to make three child components
 
 ![](https://i.imgur.com/jFm66lc.gif)
 
-14. We'll move the master component over to the component-library page of our project 
+14. We'll move the master component over to the component-library page of our project
 
 ![](https://i.imgur.com/w6nLC9S.gif)
 
-**TIP:** It’s good practice to keep master components separate from our prototype and just to use child components in our frames - this makes it easy to control everything from a small number of master components.
+**TIP:** It’s good practice to keep master components separate from our prototype and just to use child components to flesh out our frames - this makes it easy to control everything from a small number of master components, in one place.
 
-
-
-## Figma useful keyboard shortcuts
-
-**A** - Frame Tool
-**R** - Rectangle Tool
-**T** - Text Tool
-**Hold Option + arrow key** - move selected element 1px
-**Hold Shift + arrow key** - move selected element 10px
-
-
-
-
-
-- Emphasise that a frame is like one screen from your app
-- Every component must be contained inside a frame
-- We'll auto resize our frame to match the iPhone 5 screen size (320x480px)
-- And we'll add a layout grid to help us position our components within the frame (6 col, 20px margin, 10px gutter)
+---
 
 ## Step 4 - Create component 2: Menu bar w/ Plugins
 
@@ -237,7 +173,6 @@ In this step, we're going to use a plugin called Iconify to import pre-made UI i
 ![](https://i.imgur.com/lBvbfPk.gif)
 
 ![](https://i.imgur.com/ksgfwBV.png)
-
 
 3. Bring up the Iconify menu and search for a menu icon in the search field. Drag and drop your favourite icon into a frame
 
@@ -255,17 +190,19 @@ In this step, we're going to use a plugin called Iconify to import pre-made UI i
 
 ![](https://i.imgur.com/ycERBgi.gif)
 
-7. Turn these three objects into a component. We'll call it 'navbar'
+7. Turn these three objects into a component. We'll call it 'main-nav'
 
 ![](https://i.imgur.com/EfQCP86.gif)
 
+---
 
 ## Step 5 - Create component 3: Image carousel
 
 1. Draw three rectangles with the following dimensions:
-* 220x220px (for the image on the left)
-* 200x200px (for the middle image)
-* 200x200px (for the image on the right)
+
+- 220x220px (for the image on the left)
+- 200x200px (for the middle image)
+- 200x200px (for the image on the right)
 
 Position them so that the largest rectangle is in the middle. Make sure that they are all contained inside the selected frame.
 
@@ -277,12 +214,46 @@ Position them so that the largest rectangle is in the middle. Make sure that the
 
 ![](https://i.imgur.com/p0LPF4w.gif)
 
-4. 
+4. Click 'Choose image' and select one of the book cover JPEGs that are saved in this repo (in the book-covers folder)
+
+5. To resize the image to fit the rectangle, change the image size from 'Fill' to 'Fit'
+
+![](https://i.imgur.com/yU4Pr7P.gif)
+
+6. Now repeat steps 2-5 to add the relevant book covers to the other rectangles in our carousel. Stack three book covers on top of one another as before. You should end up with something that looks like this:
+
+![](https://i.imgur.com/8UYQpE1.png)
+
+7. We need to create the carousel section controls too. Using the Text tool, draw three text boxes and give them the text 'DESIGN', 'DEVELOPMENT', and 'OTHER'
+
+![](https://i.imgur.com/n7qh7FW.png)
+
+8. To underline each text box using the Line tool
+
+9. Convert everything we just made into a component called 'carousel'
+
+![](https://i.imgur.com/VgblpqH.gif)
+
+10. When we copy this component into our other frames, we can show/hide the different images to show books from the different categories. We can also apply opacity to the inactive book category names.
+
+![](https://i.imgur.com/f9WmP7Y.png)
+
+**TIP:** Remember to put the master carousel component in our component-library!
 
 ## Step 6 - Link up screens in prototype mode
 
+1. Click onto the 'Prototype' tab in the Properties Panel
 
-- Animations
-- Figma Plugins (icons)
-- export css feature
-- export as SVG
+![](https://i.imgur.com/YHhkn1n.png)
+
+2. Select the element that you want users to be able to tap/click, then click and drag the white circle on the right side over to the frame that you want it to take users to. You should see a blue arrow connecting them
+
+![](https://i.imgur.com/dU3wEmw.gif)
+
+3. Link up the other frames in the same way
+
+![](https://i.imgur.com/nJHGMWy.png)
+
+4. Press the blue Share button in the top right corner of the screen to enter the interactive prototype mode. Show the students how it switches from frame to frame when you click on the book category names
+
+![](https://i.imgur.com/STTGnNX.gif)
