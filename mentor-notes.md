@@ -6,6 +6,10 @@
 
 ---
 
+## Youtube video
+
+[Here's the link](https://www.youtube.com/watch?v=CkSVyHcbsx8&feature=youtu.be)
+
 ## Step 1 - Create a new project with two pages
 
 1. Click the 'New File' button in the top right hand corner of the screen.

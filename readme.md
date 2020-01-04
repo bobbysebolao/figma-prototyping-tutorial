@@ -26,12 +26,12 @@ We won't be doing any coding, but it contains the images that we'll add to the p
 
 ## Useful keyboard shortcuts in Figma
 
-**A** - Frame Tool
-**R** - Rectangle Tool
-**T** - Text Tool
-**Hold Option + arrow key** - move selected object 1px
-**Hold Shift + arrow key** - move selected object 10px
-**Cmd + G** - Group all selected objects together
+- **A** - Frame Tool
+- **R** - Rectangle Tool
+- **T** - Text Tool
+- **Hold Option + arrow key** - move selected object 1px
+- **Hold Shift + arrow key** - move selected object 10px
+- **Cmd + G** - Group all selected objects together
 
 ---
 
