@@ -6,11 +6,11 @@ Figma is a powerful tool that lets us design and prototype web apps before we de
 
 ---
 
-In this demo, we're going to prototype a few screens of a book sharing app to get ourselves familiar with Figma's capabilities.
+In this demo, we're going to prototype a few UI elements in a book sharing app. We'll be building these UI elements as [components](https://help.figma.com/article/66-components) that can be reused across our design.
 
 ### The Goal
 
-![](https://i.imgur.com/q7gXWBn.png)
+![](https://i.imgur.com/Aek9STO.png)
 
 > The mini prototype we'll be making
 
@@ -35,7 +35,10 @@ We won't be doing any coding, but it contains the images that we'll add to the p
 
 ---
 
-## Figma-along
+## Useful Figma plugins
+
+- [Unsplash](https://www.figma.com/c/plugin/738454987945972471/Unsplash)
+- [Mapsicle](https://www.figma.com/c/plugin/736458162635847353/Mapsicle)
 
 <!-- - Emphasise that a frame is like one screen from your app
 - Every component must be contained inside a frame

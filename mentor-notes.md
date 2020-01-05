@@ -8,7 +8,7 @@
 
 ## Youtube video
 
-[Here's the link](https://www.youtube.com/watch?v=CkSVyHcbsx8&feature=youtu.be)
+[Here's the link](https://www.youtube.com/watch?v=RF3n6jCUuzM&feature=youtu.be)
 
 ## Step 1 - Create a new project with two pages
 
