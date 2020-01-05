@@ -37,6 +37,7 @@ We won't be doing any coding, but it contains the images that we'll add to the p
 
 ## Useful Figma plugins
 
+- [Iconify](https://www.figma.com/c/plugin/735098390272716381/Iconify)
 - [Unsplash](https://www.figma.com/c/plugin/738454987945972471/Unsplash)
 - [Mapsicle](https://www.figma.com/c/plugin/736458162635847353/Mapsicle)
 
