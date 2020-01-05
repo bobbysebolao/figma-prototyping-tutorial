@@ -12,7 +12,7 @@ In this demo, we're going to prototype a few UI elements in a book sharing app. 
 
 ![](https://i.imgur.com/Aek9STO.png)
 
-> The mini prototype we'll be making
+> Link: [https://www.figma.com/file/hxLTVq8ZVqmHN8OwC56kK3/book_borrowing_app_complete?node-id=0%3A1](https://www.figma.com/file/hxLTVq8ZVqmHN8OwC56kK3/book_borrowing_app_complete?node-id=0%3A1)
 
 ## Getting started
 

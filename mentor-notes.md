@@ -8,7 +8,8 @@
 
 ## Youtube video
 
-[Here's the link](https://www.youtube.com/watch?v=RF3n6jCUuzM&feature=youtu.be)
+[Here's the tutorial link](https://www.youtube.com/watch?v=RF3n6jCUuzM&feature=youtu.be)
+[Here's the completed prototype](https://www.figma.com/file/hxLTVq8ZVqmHN8OwC56kK3/book_borrowing_app_complete?node-id=0%3A1)
 
 ## Step 1 - Create a new project with two pages
 
