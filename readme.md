@@ -22,7 +22,7 @@ Clone this repo:
 
 `git clone https://github.com/bobbysebolao/figma-prototyping-tutorial.git`
 
-We won't be doing any coding, but it contains the images that we'll add to the prototype we'll be making.
+We won't be doing any coding, but this repo contains the book cover images that we'll add to our prototype.
 
 ## Useful keyboard shortcuts in Figma
 
